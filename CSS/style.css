@@ -1,0 +1,86 @@
+@import url(https://fonts.google.com/specimen/Lexend+Deca);
+
+body{
+    margin-top: 100px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 20px;
+    /* flex-direction: column; */
+}
+p{
+    opacity: 70%;
+}
+h1{
+    font-style: unset;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+button{
+    margin: 50px 0px ;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    border: 1px solid #fff;
+    transition-duration: 0.5s;
+}
+.card{
+    width: 160px;
+    height: 350px;
+    padding: 50px  80px 40px 50px;
+}
+/* Card 1  */
+#card_1{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0px 0px 10px;
+}
+#card_1 button{
+    color: hsl(31, 77%, 52%);
+}
+#card_1 button:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: #fff;
+}
+/* Card 2 */
+#card_2{
+    background-color: hsl(184, 100%, 22%);
+}
+#card_2 button{
+    color: hsl(184, 100%, 22%);
+}
+#card_2 button:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: #fff;
+}
+/* Card 3 */
+#card_3{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 10px 10px 0px;
+}
+#card_3 button{
+    color: hsl(179, 100%, 13%);
+}
+#card_3 button:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: #fff;
+}
+
+@media (max-width: 845px) {
+    .container{
+        flex-direction: column;
+    }
+    #card_1{
+        border-radius: 10px 10px 00px 0px;
+    }
+    #card_3{
+        border-radius: 0px 0px 10px 10px;
+    }
+}
